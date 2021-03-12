@@ -66,34 +66,10 @@ class Category:
         output += '\n' + "Total: "+str(self.get_balance())        
 
         return output
-'''     
-    def withdraw(self, amount, description = None):
-        sum_ledger = self.get_balance()
-        # if sum_ledger <=0: return False
-        if ~self.check_funds(0): return False
-        if description == None: self.ledger.append({"amount": -amount, "description": ""})
-        else: self.ledger.append({"amount": -amount, "description": description})
-        return True
 
-
-    def get_balance(self): 
-        ledger = self.ledger
-        return sum([ledger[value]['amount'] for value in range(len(ledger))])
-        
-
-    def transfer(self, amount, destination):
-        # sum_ledger = self.get_balance()
-        # if sum_ledger <=0: return False
-        
-        if (self.check_funds(0)): return False
-
-        self.withdraw(amount, f"Transfer to {destination.category}")
-        destination.deposit(amount, f"Transfer from {self.category}")
-        return True
-
-    def check_funds(self, amount):
-        if self.get_balance() < amount: return False
-        return True
-'''
 def create_spend_chart(categories):
-    pass
+    bar_chart = list()
+    bar_chart_values = [100]
+    for i in range 
+
+    return "Percentage spent by category"+"\n"
